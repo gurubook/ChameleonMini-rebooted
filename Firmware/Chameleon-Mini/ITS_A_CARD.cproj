@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
@@ -228,12 +228,13 @@
       <Value>DEFAULT_SETTING=0</Value>
       <Value>DEFAULT_CONFIGURATION=CONFIG_MF_CLASSIC_1K</Value>
       <Value>DEFAULT_BUTTON_ACTION=BUTTON_ACTION_CYCLE_SETTINGS</Value>
-      <Value>CONFIG_MF_ULTRALIGHT_SUPPORT</Value>
       <Value>CONFIG_MF_CLASSIC_1K_SUPPORT</Value>
       <Value>CONFIG_MF_CLASSIC_4K_SUPPORT</Value>
       <Value>CONFIG_MF_DETECTION_SUPPORT</Value>
       <Value>ENABLE_EEPROM_SETTINGS</Value>
       <Value>SUPPORT_FIRMWARE_UPGRADE</Value>
+      <Value>CONFIG_MF_CLASSIC_1K_7B_SUPPORT</Value>
+      <Value>CONFIG_MF_CLASSIC_4K_7B_SUPPORT</Value>
     </ListValues>
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>

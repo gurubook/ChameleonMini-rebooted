@@ -135,7 +135,7 @@ static const PROGMEM ConfigurationType ConfigurationTable[] = {
     [CONFIG_MF_CLASSIC_1K_7B] = {
         .CodecInitFunc = ISO14443ACodecInit,
         .CodecTaskFunc = ISO14443ACodecTask,
-        .ApplicationInitFunc = MifarePlus1kAppInit_7B,
+        .ApplicationInitFunc = MifareClassicAppInit1K7B,
         .ApplicationResetFunc = MifareClassicAppReset,
         .ApplicationTaskFunc = MifareClassicAppTask,
         .ApplicationTickFunc = ApplicationTickDummy,
@@ -167,7 +167,7 @@ static const PROGMEM ConfigurationType ConfigurationTable[] = {
 [CONFIG_MF_CLASSIC_4K_7B] = {
 	.CodecInitFunc = ISO14443ACodecInit,
 	.CodecTaskFunc = ISO14443ACodecTask,
-	.ApplicationInitFunc = MifareClassicAppInit4K7B,
+	.ApplicationInitFunc = MifareClassicAppInit4K,
 	.ApplicationResetFunc = MifareClassicAppReset,
 	.ApplicationTaskFunc = MifareClassicAppTask,
 	.ApplicationTickFunc = ApplicationTickDummy,
@@ -230,7 +230,7 @@ bool ConfigurationSetByName(const char* Configuration)
 			return false;
 		}
         ConfigurationSetById(Id);
-        //LogEntry(LOG_INFO_CONFIG_SET, Configuration, StringLength(Configuration, CONFIGURATION_NAME_LENGTH_MAX-1));
+        //// LogEntry(LOG_INFO_CONFIG_SET, Configuration, StringLength(Configuration, CONFIGURATION_NAME_LENGTH_MAX-1));
             return true;
     } else {
 		return false;
