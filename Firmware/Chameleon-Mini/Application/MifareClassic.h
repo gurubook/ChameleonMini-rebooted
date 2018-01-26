@@ -18,6 +18,7 @@
 void MifareClassicAppInit1K(void);
 void MifareClassicAppInit1K7B(void);
 void MifareClassicAppInit4K(void);
+void MifareClassicAppInit4K7B(void);
 void MifareClassicAppReset(void);
 void MifareClassicAppTask(void);
 
